@@ -8,21 +8,7 @@ package com.mikasa.arithmetric.sort;
  * @author: tianluhua
  * @date 2019/3/28 12:13
  */
-public class BubbleSort {
-    public static void main(String[] args) {
-
-        int[] bigData=new int[100000];
-        for (int i =99999; i >0 ; i--) {
-            bigData[i]=i;
-        }
-        long l = System.currentTimeMillis();
-        int[] ints = testBubbleSort(bigData);
-        long l1 = System.currentTimeMillis();
-        System.out.println(l1-l);
-        for (int anInt : ints) {
-            System.out.print(anInt + "  ");
-        }
-    }
+class BubbleSort {
 
     /**
      * 从小到大进行排序
@@ -31,7 +17,7 @@ public class BubbleSort {
      * @return int[]
      * @date 2019/3/28 12:16
      */
-    public static int[] testBubbleSort(int[] dataArray) {
+    static int[] testBubbleSort(int[] dataArray) {
 
         int tempData = 0;
         for (int i = 0; i < dataArray.length - 1; i++) {
